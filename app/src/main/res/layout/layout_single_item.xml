@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+             <TextView
+                 android:id="@+id/tv_label"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="suggestions"
+                 android:layout_alignParentRight="true"
+                 android:layout_marginRight="20dp"
+                 android:layout_marginTop="10dp"
+                 android:padding="8dp"
+
+                 />
+            <TextView
+                android:id="@+id/tv_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MORE"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:padding="8dp"
+                />
+        </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="30dp"
+                android:id="@+id/rv_subItems"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="308dp"></android.support.v7.widget.RecyclerView>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
